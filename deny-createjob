@@ -1,0 +1,19 @@
+{
+  "Id": "Policy1641284105304",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1641284099134",
+      "Action": [
+        "s3:CreateJob"
+      ],
+      "Effect": "Deny",
+      "Resource": "arn:aws:s3:::new-bucket001",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::869430751312:user/git-hub"
+        ]
+      }
+    }
+  ]
+}
