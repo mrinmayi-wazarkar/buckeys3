@@ -1,0 +1,19 @@
+{
+  "Id": "Policy1641283007584",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1641282938772",
+      "Action": [
+        "s3:DeleteBucket"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::new-bucket001",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::869430751312:user/git-hub"
+        ]
+      }
+    }
+  ]
+}
