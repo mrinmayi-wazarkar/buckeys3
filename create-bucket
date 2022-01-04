@@ -1,0 +1,19 @@
+{
+  "Id": "Policy1641273273129",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1641273270501",
+      "Action": [
+        "s3:CreateBucket"
+      ],
+      "Effect": "Deny",
+      "Resource": "arn:aws:s3:::new-bucket001",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::869430751312:user/cloud1"
+        ]
+      }
+    }
+  ]
+}
