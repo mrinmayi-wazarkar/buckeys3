@@ -1,0 +1,19 @@
+{
+  "Id": "Policy1641283076019",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1641283070671",
+      "Action": [
+        "s3:CreateBucket"
+      ],
+      "Effect": "Deny",
+      "Resource": "arn:aws:s3:::new-bucket001",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::869430751312:user/git-hub"
+        ]
+      }
+    }
+  ]
+}
